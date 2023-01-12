@@ -32,6 +32,9 @@ mongoose
 // app.listen(port, () => {
 //   console.log(`App running on port ${port}...`);
 // });
+app.get("/", (req, res) => {
+  res.send("Hello Payment API");
+});
 app.use("/product", ProductRoute);
 app.use("/payment", PaymentRoute);
 
